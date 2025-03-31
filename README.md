@@ -1,5 +1,8 @@
 # Homemade BookCorpus
 
+**Key Change**: Add data parallelism in File downloading - number of subprocesses according to the number of cores - to reduce the waiting time.
+
+
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 **Clawling could be difficult due to some issues of the website. Also, please consider another option such as using publicly available files at your own risk.**
