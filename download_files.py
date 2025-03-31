@@ -146,7 +146,7 @@ def main():
     parser.add_argument("--out-dir", "--out", type=str, required=True)
     parser.add_argument("--list-path", "--list", type=str, required=True)
     parser.add_argument("--trash-bad-count", action="store_true", default=False)
-    parser.add_argument("--num-processes", type=int, default=4)
+    parser.add_argument("--num-processes", type=int, default=mp.cpu_count())
     args = parser.parse_args()
 
     num_processes = args.num_processes

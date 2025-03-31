@@ -269,7 +269,7 @@ def main():
 if __name__ == "__main__":
     global NUM_PROCESSES
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num-processes", type=int, default=4)
+    parser.add_argument("--num-processes", type=int, default=mp.cpu_count())
     NUM_PROCESSES = parser.parse_args().num_processes
 
     main()
